@@ -2,6 +2,15 @@ package rb
 
 import "time"
 
+type Task struct {
+        Local          string
+        Remote         string
+        LinkDest       string
+        FolderId       string
+        BackupId       string
+        SshFingerprint string
+}
+
 type HostOpResult struct {
         Success bool
 }
