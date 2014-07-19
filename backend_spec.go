@@ -48,14 +48,15 @@ type HostLogBackupParams struct {
 	RsyncStdout string
 	RsyncStderr string
 	ExecError   string
-	Path string
+	Path        string
 	StatError   string
 }
 
 type HostCommitBackupParams struct {
-	Auth     HostAuth
-	FolderId string
-	BackupId string
+	Auth        HostAuth
+	FolderId    string
+	BackupId    string
+	RsyncOutput string
 }
 
 type HostFolder struct {
