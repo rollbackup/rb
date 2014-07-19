@@ -40,12 +40,22 @@ type HostGetTasksResult struct {
 	Success bool
 }
 
+type HostLogBackupParams struct {
+	Auth        HostAuth
+	FolderId    string
+	BackupId    string
+	RsyncArgs   []string
+	RsyncStdout string
+	RsyncStderr string
+	ExecError   string
+	Path string
+	StatError   string
+}
+
 type HostCommitBackupParams struct {
 	Auth     HostAuth
 	FolderId string
 	BackupId string
-        RsyncOutput string
-        RsyncExecError string
 }
 
 type HostFolder struct {
