@@ -1,6 +1,7 @@
 package rb
 
 import "time"
+import "github.com/rollbackup/gosigar"
 
 type Task struct {
 	Local          string
@@ -98,4 +99,17 @@ type HostGetBackupResult struct {
 	RsyncUrl       string
 	SshFingerprint string
 	Success        bool
+}
+
+type HostTrackMetricsParams struct {
+	Auth               HostAuth
+	Hostname           string
+	Mem                sigar.Mem
+	Swap               sigar.Swap
+	Uptime             sigar.Uptime
+	CpuList            sigar.CpuList
+	LoadAverage        sigar.LoadAverage
+	FileSystemList     sigar.FileSystemList
+	FileSystemUsage    map[string]sigar.FileSystemUsage
+	NetworkUtilization sigar.NetworkUtilization
 }
