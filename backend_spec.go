@@ -27,6 +27,12 @@ type HostRegisterParams struct {
 	PublicKey string
 }
 
+type HostInitParams struct {
+	Token        string
+	Hostname     string
+	AgentVersion string
+}
+
 type HostAddFolderParams struct {
 	Auth     HostAuth
 	Path     string
