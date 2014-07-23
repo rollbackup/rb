@@ -17,8 +17,9 @@ type HostOpResult struct {
 }
 
 type HostAuth struct {
-	HostId string
-	Token  string
+	HostId       string
+	Token        string
+	AgentVersion string
 }
 
 type HostRegisterParams struct {
