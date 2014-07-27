@@ -118,5 +118,6 @@ type HostTrackMetricsParams struct {
 	LoadAverage        sigar.LoadAverage
 	FileSystemList     sigar.FileSystemList
 	FileSystemUsage    map[string]sigar.FileSystemUsage
+	DiskStats          []sigar.DiskStats
 	NetworkUtilization sigar.NetworkUtilization
 }
