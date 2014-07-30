@@ -6,7 +6,7 @@ import "github.com/rollbackup/gosigar"
 type Task struct {
 	Local          string
 	Remote         string
-	LinkDest       string
+	Args           []string
 	FolderId       string
 	BackupId       string
 	SshFingerprint string
