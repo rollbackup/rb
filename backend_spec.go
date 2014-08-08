@@ -3,7 +3,14 @@ package rb
 import "time"
 import "github.com/rollbackup/gosigar"
 
+type TaskPlugin struct {
+	Name    string
+	Version string
+	Options map[string]string
+}
+
 type Task struct {
+	Plugin         TaskPlugin
 	Local          string
 	Remote         string
 	Args           []string
