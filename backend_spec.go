@@ -112,6 +112,7 @@ type HostGetBackupParams struct {
 type HostGetBackupResult struct {
 	RsyncUrl       string
 	SshFingerprint string
+	Plugin         TaskPlugin
 	Success        bool
 }
 
